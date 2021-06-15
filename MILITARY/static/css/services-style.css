@@ -1,0 +1,37 @@
+.services-button {
+    border-color: #000000;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0);
+    padding: 12px;
+}
+
+.services-button:hover {
+    border-color: #000000;
+    border-width: 1px;
+    background-color: rgba(21, 21, 21, 0.87);
+}
+
+.background-darken {
+    background-color: #2f2f2f;
+}
+
+.inner-bg-darken {
+    background-color: #2c2c2c;
+}
+
+.row-bg-darken {
+    background-color: 272727;
+}
+
+.services-block {
+    background-color: #2f2f2f;
+}
+
+.text-lighten {
+    color: #ededed;
+    padding: 10px;
+}
+
+.text-roman {
+    font-family: Times New Roman;
+}

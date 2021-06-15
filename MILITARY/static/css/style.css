@@ -1,0 +1,76 @@
+.link-block__img {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    left: -1px;
+    background-size: cover;
+    z-index: 1;
+    background-position: 50% 50%;
+    -webkit-transition: all .5s cubic-bezier(.25,.46,.45,.94);
+    transition: all .5s cubic-bezier(.25,.46,.45,.94);
+}
+
+cover-fit {
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    width: 500px;
+}
+
+set-overlay {
+    background-image: url('assets/img/gezer-amorim.jpg');
+    background-size: cover;
+}
+
+bg-overlay {
+    background-image: url('assets/img/gezer-amorim.jpg');
+    background-size: cover;
+}
+
+footer {
+    padding: 25px;
+}
+
+footer-col {
+    padding: 10px;
+}
+
+footer-col-row {
+    font-family: w;
+}
+
+footer-text {
+    font-weight: 700;
+    text-align: left;
+}
+
+.cursive-text {
+    font-family: cursive;
+}
+
+.gfg {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 12.5%;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+

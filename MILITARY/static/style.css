@@ -1,0 +1,27 @@
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 60vh;
+}
+
+.active-tile {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #dedede;
+}
+
+@media (max-width:991px) {
+    .active-tile {
+        height: 40px;
+    }
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
