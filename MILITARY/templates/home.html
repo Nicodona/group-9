@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,14 +9,14 @@
         <meta name="author" content="Elroy Kanye">
         <title>British Army</title>
         <!-- icon -->
-        <link rel="icon" href="assets/img/icon/96154b1e3187e435ef145eb2bd02a1b4.png">
+        <link rel="icon" href="{% static 'assets/img/icon/96154b1e3187e435ef145eb2bd02a1b4.png' %}">
         <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
         <!-- Kustom styles for this page -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet">
         <style></style>
-        <script src="js/float-panel.js"></script>
+        <script src="{% static 'js/float-panel.js' %}"></script>
         <script>/* Home Interactions */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
     </head>
     <body>
@@ -23,20 +24,20 @@
             <h3 class="masthead-brand">Metropolis</h3>
             <nav class="nav nav-masthead float-panel">
                 <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="about.html#what-we-do">What We Do</a>
-                <a class="nav-link" href="about.html#who-we-are">Who We Are</a>
-                <a class="nav-link" href="equipment.html">Equipment</a>
-                <a class="nav-link" href="services.html">Services</a>
-                <a class="nav-link" href="blog.html">News and Events</a>
+                <a class="nav-link" href="{% url 'about' %}#what-we-do">What We Do</a>
+                <a class="nav-link" href="{% url 'about' %}#who-we-are">Who We Are</a>
+                <a class="nav-link" href="#">Equipment</a>
+                <a class="nav-link" href="{% url 'services' %}">Services</a>
+                <a class="nav-link" href="#">News and Events</a>
                 <a class="nav-link" href="#">Careers</a>
             </nav>
         </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
         <section class=" pb-5 pt-5" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
             <div class="mb-5 mt-5 pb-5 pt-5 row w-100">
                 <h1 class="bg-dark font-weight-bolder m-5 pb-4 pl-5 pr-5 pt-4 text-capitalize text-left text-white" style="font-variant: small-caps;">The Metro Army</h1>
@@ -138,7 +139,7 @@ citizens can live and prosper.</h4>
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="container">
-                                    <img src="assets/img/pexels-pixabay-40820.jpg" class="d-block h-auto mw-100 new-img" style="height: 185px;">
+                                    <img src="{% static 'assets/img/pexels-pixabay-40820.jpg' %}" class="d-block h-auto mw-100 new-img" style="height: 185px;">
                                 </div>
                             </div>
                             <div class="row">
@@ -151,7 +152,7 @@ citizens can live and prosper.</h4>
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="container">
-                                    <img src="assets/img/pexels-pixabay-37828.jpg" class="w-100 d-block" style="height: 185px;">
+                                    <img src="{% static 'assets/img/pexels-pixabay-37828.jpg' %}" class="w-100 d-block" style="height: 185px;">
                                 </div>
                             </div>
                             <div class="row">
@@ -164,7 +165,7 @@ citizens can live and prosper.</h4>
                         <div class="col-md-4"> 
                             <div class="row">
                                 <div class="container">
-                                    <img src="assets/img/pexels-antonio-prado-3880225.jpg" class="w-100 d-block" style="height: 185px;">
+                                    <img src="{% static 'assets/img/pexels-antonio-prado-3880225.jpg' %}" class="w-100 d-block" style="height: 185px;">
                                 </div>
                             </div>
                             <div class="row">
@@ -195,7 +196,7 @@ citizens can live and prosper.</h4>
                         <div class="mb-4"> 
                             <a href="#" class="text-white">+237 671 234 567</a> 
                             <br> 
-                            <a href="#" class="text-white">group9@webprogramming.come</a> 
+                            <a href="#" class="text-white">group6@webprogramming.come</a>
                         </div>                         
                         <div class="d-inline-flex flex-wrap"> 
                             <a href="#" class="p-1 text-white"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
@@ -263,6 +264,6 @@ citizens can live and prosper.</h4>
     $('[data-toggle="tooltip"]').tooltip();
 })
 </script>
-        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+        <script type="text/javascript" src="{% static 'pgia/lib/pgia.js' %}"></script>
     </body>
 </html>

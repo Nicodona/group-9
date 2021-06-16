@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,29 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
-        <meta name="author" content="Elroy Kanye">
+        <meta name="author" content="Nico">
         <title>Services</title>
         <!-- icon -->
-        <link rel="icon" href="assets/img/icon/96154b1e3187e435ef145eb2bd02a1b4.png">
+        <link rel="icon" href="{% static 'assets/img/icon/96154b1e3187e435ef145eb2bd02a1b4.png' %}">
         <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="blocks.css">
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'blocks.css' %}">
         <!-- Custom styles for this page -->
-        <link href="css/services-style.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-        <link href="css/cover.css" rel="stylesheet">
+        <link href="{% static 'css/services-style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet">
+        <link href="{% static 'css/cover.css' %}" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="inner" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
                 <h3 class="masthead-brand">Metropolis</h3>
                 <nav class="nav nav-masthead">
-                    <a class="nav-link" href="home.html">Home</a>
-                    <a class="nav-link" href="about.html#what-we-do">What We Do</a>
-                    <a class="nav-link" href="about.html#who-we-are">Who We Are</a>
-                    <a class="nav-link" href="equipment.html">Equipment</a>
-                    <a class="nav-link active" href="services.html">Services</a>
-                    <a class="nav-link" href="blog.html">News and Events</a>
+                    <a class="nav-link" href="{% url 'realhome' %}">Home</a>
+                    <a class="nav-link" href="{% url 'about' %}#what-we-do">What We Do</a>
+                    <a class="nav-link" href="{% url 'about' %}#who-we-are">Who We Are</a>
+                    <a class="nav-link" href="#">Equipment</a>
+                    <a class="nav-link active" href="{% url 'services' %}">Services</a>
+                    <a class="nav-link" href="#">News and Events</a>
                     <a class="nav-link" href="#">Careers</a>
                 </nav>
             </div>
@@ -46,12 +47,12 @@
                             <h1 style="padding-bottom: 24px; padding-top: 24px; font-style: normal;" class="text-roman">Dedicated to Helping Our Country Succeed</h1>
                             <p class="font-weight-light lead mb-4 text-roman">
                                 Our ability to feel, act and communicate is indistinguishable from magic. </p>
-                            <a href="contact.html" class="btn btn-primary services-button">Contact Us</a>
+                            <a href="{% 'about' %}" class="btn btn-primary services-button">Contact Us</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="background-darken mb-n5 p-3 shadow" style="position: relative; background-image: url('assets/img/harrison-haines.jpg'); background-size: cover; background-color: rgba(36, 36, 36, 0.56);">
-                            <img src="assets/img/harrison-haines.jpg" class="img-fluid w-100">
+                            <img src="{% static 'assets/img/harrison-haines.jpg' %}" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
@@ -130,7 +131,7 @@
                             <a href="about.html#contact-us" class="btn btn-primary">Contact</a> 
                         </div>
                         <div class="col-lg-5"> 
-                            <img src="assets/img/pexels-specna-arms-1927974.jpg" class="w-100"/> 
+                            <img src="{% static 'assets/img/pexels-specna-arms-1927974.jpg' %}" class="w-100"/>
                         </div>                         
                     </div>
                 </div>                 
@@ -228,8 +229,8 @@
                                     </svg>                                     
                                     <h2 class="mb-3">What is a system without its security? The worst idea yo</h2> 
                                     <div class=""> 
-                                        <span>Elroy Kanye - </span> 
-                                        <span class="text-primary">Skye8</span> 
+                                        <span>NICODONA - </span>
+                                        <span class="text-primary">WISENSE</span>
                                     </div>                                     
                                 </div>                                 
                             </div>                             
@@ -389,8 +390,8 @@
                 </div>                 
             </div>             
         </footer>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     </body>
 </html>

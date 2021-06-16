@@ -11,27 +11,27 @@
         <!-- icon -->
         <link rel="icon" href="{% static 'assets/img/icon/96154b1e3187e435ef145eb2bd02a1b4.png' %}">
         <!-- Bootstrap core CSS -->
-        <link href="{% static 'bootstrap/css/bootstrap.css" rel="stylesheet' %}">
+        <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
         <!-- Custom styles for this template -->
-        <link href="{% static 'css/cover.css" rel="stylesheet' %}">
+        <link href="{% static 'css/cover.css' %}" rel="stylesheet">
     </head>
     <body>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
         <script src="{% static 'assets/js/popper.js' %}"></script>
         <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
         <header>
             <div class="inner" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
                 <h3 class="masthead-brand">Metropolis</h3>
                 <nav class="nav nav-masthead">
-                    <a class="nav-link" href="home.html">Home</a>
-                    <a class="nav-link" href="about.html#what-we-do">What We Do</a>
-                    <a class="nav-link" href="about.html#who-we-are">Who We Are</a>
-                    <a class="nav-link" href="equipment.html">Equipment</a>
-                    <a class="nav-link" href="services.html">Services</a>
-                    <a class="nav-link" href="blog.html">News and Events</a>
+                    <a class="nav-link" href="{% url 'realhome' %}">Home</a>
+                    <a class="nav-link" href="{% url 'about' %}#what-we-do">What We Do</a>
+                    <a class="nav-link" href="{% url 'about' %}#who-we-are">Who We Are</a>
+                    <a class="nav-link" href="#">Equipment</a>
+                    <a class="nav-link" href="{% url 'services' %}">Services</a>
+                    <a class="nav-link" href="#">News and Events</a>
                     <a class="nav-link" href="#">Careers</a>
                 </nav>
             </div>
