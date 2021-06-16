@@ -20,20 +20,20 @@
     </head>
     <body>
         <header>
-            <div class="inner" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
-                <h3 class="masthead-brand">Metropolis</h3>
+            <div class="inner" style="background-image: url('/static/assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
+                <h3 class="masthead-brand">Air force one</h3>
                 <nav class="nav nav-masthead">
                     <a class="nav-link" href="{% url 'realhome' %}">Home</a>
                     <a class="nav-link" href="{% url 'about' %}#what-we-do">What We Do</a>
                     <a class="nav-link" href="{% url 'about' %}#who-we-are">Who We Are</a>
-                    <a class="nav-link" href="#">Equipment</a>
+                    <a class="nav-link" href="{% url 'signup' %}">signup</a>
                     <a class="nav-link active" href="{% url 'services' %}">Services</a>
                     <a class="nav-link" href="#">News and Events</a>
-                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="{%url 'login' %}">login</a>
                 </nav>
             </div>
         </header>
-        <section class=" pb-5 pt-5" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
+        <section class=" pb-5 pt-5" style="background-image: url('/static/assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
             <div class="mb-5 mt-5 pb-5 pt-5 row w-100">
                 <h1 class="bg-dark font-weight-bolder m-5 pb-4 pl-5 pr-5 pt-4 text-capitalize text-left text-white" style="font-variant: small-caps;">Services</h1>
             </div>
@@ -47,11 +47,11 @@
                             <h1 style="padding-bottom: 24px; padding-top: 24px; font-style: normal;" class="text-roman">Dedicated to Helping Our Country Succeed</h1>
                             <p class="font-weight-light lead mb-4 text-roman">
                                 Our ability to feel, act and communicate is indistinguishable from magic. </p>
-                            <a href="{% 'about' %}" class="btn btn-primary services-button">Contact Us</a>
+                            <a href="{% url 'about' %}" class="btn btn-primary services-button">Contact Us</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="background-darken mb-n5 p-3 shadow" style="position: relative; background-image: url('assets/img/harrison-haines.jpg'); background-size: cover; background-color: rgba(36, 36, 36, 0.56);">
+                        <div class="background-darken mb-n5 p-3 shadow" style="position: relative; background-image: url('/static/assets/img/harrison-haines.jpg'); background-size: cover; background-color: rgba(36, 36, 36, 0.56);">
                             <img src="{% static 'assets/img/harrison-haines.jpg' %}" class="img-fluid w-100">
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 </g>
                             </svg>                             
                             <h5 class="font-weight-bold text-lighten text-roman">Services and Record Medals</h5> 
-                            <p>If you are searching for records of a campaign or service medal awarded to someone who fought with the British armed services prior to the Second World War, we suggest that you take a look at the Natioanal Archives</p> 
+                            <p>If you are searching for records of a campaign or service medal awarded to someone who fought with the Cameroonian armed services prior to the Second World War, we suggest that you take a look at the Natioanal Archives</p> 
                         </div>                         
                     </div>                     
                     <div class="services-block col-sm-6 col-xl-3 pb-3 pt-3"> 
@@ -115,7 +115,7 @@
                                 </g>
                             </svg>                             
                             <h5 class="font-weight-bold text-lighten text-roman">Recruitment Issues</h5> 
-                            <p>Any information on British Army recruitment, basic entry requirements and how to apply can be found on the Army Careers page.</p> 
+                            <p>Any information on Cameroonian Army recruitment, basic entry requirements and how to apply can be found on the Army Careers page.</p> 
                         </div>                         
                     </div>                     
                 </div>                 
@@ -209,8 +209,8 @@
                                     </svg>                                     
                                     <h2 class="mb-3">In chess, the pawns go first. It is a sacrifice for the greater good</h2> 
                                     <div class=""> 
-                                        <span>Ketimoh Florantine - </span> 
-                                        <span class="text-primary">KFA Tech</span> 
+                                        <span>nji kimbi - </span> 
+                                        <span class="text-primary">K-Tech</span> 
                                     </div>                                     
                                 </div>                                 
                                 <div class="carousel-item"> 
@@ -219,8 +219,8 @@
                                     </svg>                                     
                                     <h2 class="mb-3">The real fight is not in the field. It is in the heart</h2> 
                                     <div class=""> 
-                                        <span>Fien Ngumih - </span> 
-                                        <span class="text-primary">C-Tech</span> 
+                                        <span>nkesa muso - </span> 
+                                        <span class="text-primary">m-Tech</span> 
                                     </div>                                     
                                 </div>                                 
                                 <div class="carousel-item"> 
@@ -229,8 +229,8 @@
                                     </svg>                                     
                                     <h2 class="mb-3">What is a system without its security? The worst idea yo</h2> 
                                     <div class=""> 
-                                        <span>NICODONA - </span>
-                                        <span class="text-primary">WISENSE</span>
+                                        <span>NICO cyber404 - </span>
+                                        <span class="text-primary">WiSENSE</span>
                                     </div>                                     
                                 </div>                                 
                             </div>                             
@@ -250,7 +250,7 @@
                 <div class="justify-content-center row row-bg-darken"> 
                     <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
                         <div class="d-flex flex-column h-100 inner-bg-darken"> 
-                            <a href="#" class="d-block"><img src="assets/img/services/pexels-pixabay-163467.jpg" class="img-fluid w-100"></a>
+                            <a href="#" class="d-block"><img src="{% static 'assets/img/services/pexels-pixabay-163467.jpg' %}" class="img-fluid w-100"></a>
                             <div class="p-3">
                                 <div class="font-weight-bold mb-2">
                                     <a href="">Newbie</a>, 
@@ -259,8 +259,8 @@
                                 <a href="#" class="text-light text-decoration-none"><h5 class="mb-0">Getting aquainted with life as a veteran</h5></a>
                             </div>
                             <div class="align-items-center border border-bottom-0 border-left-0 border-right-0 d-flex justify-content-between mt-auto p-3 small">
-                                <a href="#" class="align-items-center d-flex text-dark"><img src="assets/img/services/pexels-specna-arms-1927974.jpg" class="mr-2 rounded-circle" width="48" height="48"><div>
-                                        <h6 class="mb-0 text-light">Atabong Yannick</h6>
+                                <a href="#" class="align-items-center d-flex text-dark"><img src="{% static 'assets/img/services/pexels-specna-arms-1927974.jpg' %}" class="mr-2 rounded-circle" width="48" height="48"><div>
+                                        <h6 class="mb-0 text-light">jude ngwa</h6>
                                         <p class="mb-0 text-secondary">10 August 2020</p>
                                     </div></a>
                                 <span>6 min</span>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
                         <div class=" d-flex flex-column h-100 inner-bg-darken"> 
-                            <a href="#" class="d-block"><img src="assets/img/services/pexels-specna-arms-1927974.jpg" class="img-fluid w-100"></a>
+                            <a href="#" class="d-block"><img src="{% static 'assets/img/services/pexels-specna-arms-1927974.jpg' %}" class="img-fluid w-100"></a>
                             <div class="p-3">
                                 <div class="font-weight-bold mb-2">
                                     <a href="">Dreams</a>, 
@@ -278,8 +278,8 @@
                                 <a href="#" class="text-light text-decoration-none"><h5 class="mb-0">Where to start as an aspiring soldier?</h5></a>
                             </div>
                             <div class="align-items-center border border-bottom-0 border-left-0 border-right-0 d-flex justify-content-between mt-auto p-3 small">
-                                <a href="#" class="align-items-center d-flex text-dark"><img src="assets/img/services/pexels-pixabay-54098.jpg" class="mr-2 rounded-circle" width="48" height="48"><div>
-                                        <h6 class="mb-0 text-light">Vershiyi Collette</h6>
+                                <a href="#" class="align-items-center d-flex text-dark"><img src="{% static 'assets/img/services/pexels-pixabay-54098.jpg' %}" class="mr-2 rounded-circle" width="48" height="48"><div>
+                                        <h6 class="mb-0 text-light">vasitha ngwi</h6>
                                         <p class="mb-0 text-secondary">10 August 2020</p>
                                     </div></a>
                                 <span>8 min</span>
@@ -288,7 +288,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 pb-3 pt-3"> 
                         <div class="d-flex flex-column h-100 inner-bg-darken"> 
-                            <a href="#" class="d-block"><img src="assets/img/services/pexels-pixabay-54098.jpg" class="img-fluid w-100"></a>
+                            <a href="#" class="d-block"><img src="{% static 'assets/img/services/pexels-pixabay-54098.jpg' %}" class="img-fluid w-100"></a>
                             <div class="p-3">
                                 <div class="font-weight-bold mb-2">
                                     <a href="">Query</a>, 
@@ -297,8 +297,8 @@
                                 <a href="#" class="text-light text-decoration-none"><h5 class="mb-0">How to make a freedom of information request</h5></a>
                             </div>
                             <div class="align-items-center border border-bottom-0 border-left-0 border-right-0 d-flex justify-content-between mt-auto p-3 small">
-                                <a href="#" class="align-items-center d-flex text-dark"><img src="assets/img/services/pexels-pixabay-54098.jpg" class="mr-2 rounded-circle" width="48" height="48"><div>
-                                        <h6 class="mb-0 text-light">Roy Feroy</h6>
+                                <a href="#" class="align-items-center d-flex text-dark"><img src="{% static 'assets/img/services/pexels-pixabay-54098.jpg' %}" class="mr-2 rounded-circle" width="48" height="48"><div>
+                                        <h6 class="mb-0 text-light">leo tenzi</h6>
                                         <p class="mb-0 text-secondary">10 August 2020</p>
                                     </div></a>
                                 <span>5 min</span>
@@ -323,11 +323,11 @@
             <div class="container"> 
                 <div class="row"> 
                     <div class="col-xl-4 mr-auto py-3"> 
-                        <a href="#" class="d-inline-block h2 mb-4 text-decoration-none text-light text-uppercase">Metropolis</a> 
+                        <a href="#" class="d-inline-block h2 mb-4 text-decoration-none text-light text-uppercase">Air force one</a> 
                         <div class="mb-4"> 
                             <a href="#" class="text-white">+237 671 234 567</a> 
                             <br> 
-                            <a href="#" class="text-white">group9@webprogramming.come</a> 
+                            <a href="#" class="text-white">group6@webprogramming.come</a> 
                         </div>                         
                         <div class="d-inline-flex flex-wrap"> 
                             <a href="#" class="p-1 text-white"> <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"> 
@@ -386,7 +386,7 @@
                 </div>                 
                 <div class="pb-3 pt-3 text-center"> 
                     <hr class="border-light mt-0"> 
-                    <p class="mb-0">Copyright &copy; 2021 Metropolis</p> 
+                    <p class="mb-0">Copyright &copy; 2021 Air force one</p> 
                 </div>                 
             </div>             
         </footer>

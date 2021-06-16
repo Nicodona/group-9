@@ -21,12 +21,12 @@ cover-fit {
 }
 
 set-overlay {
-    background-image: url('assets/img/gezer-amorim.jpg');
+    background-image: url('/static/assets/img/gezer-amorim.jpg');
     background-size: cover;
 }
 
 bg-overlay {
-    background-image: url('assets/img/gezer-amorim.jpg');
+    background-image: url('/static/assets/img/gezer-amorim.jpg');
     background-size: cover;
 }
 

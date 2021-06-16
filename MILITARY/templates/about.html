@@ -23,8 +23,8 @@
         <script src="{% static 'assets/js/popper.js' %}"></script>
         <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
         <header>
-            <div class="inner" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
-                <h3 class="masthead-brand">Metropolis</h3>
+            <div class="inner" style="background-image: url('/static/assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover; padding-bottom: 64px;">
+                <h3 class="masthead-brand">Air force one</h3>
                 <nav class="nav nav-masthead">
                     <a class="nav-link" href="{% url 'realhome' %}">Home</a>
                     <a class="nav-link" href="{% url 'about' %}#what-we-do">What We Do</a>
@@ -36,12 +36,12 @@
                 </nav>
             </div>
         </header>
-        <section class=" pb-5 pt-5" style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
+        <section class=" pb-5 pt-5" style="background-image: url('/static/assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
             <div class="mb-5 mt-5 pb-5 pt-5 row w-100">
                 <h1 class="bg-dark font-weight-bolder m-5 pb-4 pl-5 pr-5 pt-4 text-capitalize text-left text-white" style="font-variant: small-caps;">About</h1>
             </div>
         </section>
-        <main style="background-image: url('assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
+        <main style="background-image: url('/static/assets/img/pexels-specna-arms-889709.jpg'); background-attachment: fixed; background-size: cover;">
             <section>
                 <div class="container pb-3 pt-3" style="background-color: rgba(43, 43, 43, 0.79);">
                     <h1 id="who-we-are" class="font-weight-bold h2 pb-1 pt-1 text-monospace text-uppercase">Who We Are</h1>
@@ -67,17 +67,17 @@
                         </div>
                         <div class="col-md-6 pb-3 pt-3" style="background-color: #2c2c2c;">
                             <h3>Prevent Conflict</h3> 
-                            <p>The Metro Army does not simply react to world events.  We are persistently engaged around the world to help shape the environment and prevent conflict in the future. This may be by working with partner nations in Iraq and Afghanistan to deliver world class training and assistance, reassuring our allies with soldiers deployed forward in Eastern Europa, or supporting the fight against poaching in Afrika.</p> 
+                            <p>The Air force one Army does not simply react to world events.  We are persistently engaged around the world to help shape the environment and prevent conflict in the future. This may be by working with partner nations in Chad and Nigeria to deliver world class training and assistance, reassuring our allies with soldiers deployed forward in west Africa, or Central Africa.</p> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 pb-3 pt-3" style="background-color: #2c2c2c;">
                             <h3>Deal With Disaster</h3> 
-                            <p>Be it at home or overseas, we are always prepared to provide assistance in the event of a large scale emergency.  From floods in the Metro, to humanitarian assistance overseas in Afrika following the Zombie outbreak, or the Caribbean after the hurricanes, we are ready to meet every challenge.</p> 
+                            <p>Be it at home or overseas, we are always prepared to provide assistance in the event of a large scale emergency.  From floods in the country, to humanitarian assistancein Chad, we are ready to meet every challenge.</p> 
                         </div>
                         <div class="col-md-6 pb-3 pt-3" style="background-color: #2c2c2c;">
                             <h3>Fighting the Nation's Enemies</h3> 
-                            <p>The British Army has many uses, though it is primarily a war-fighting organisation to protect the nation and, if required, fight the nation’s enemies with absolute commitment.  Within hours soldiers from the Air Assault Task Force can react to a potential adversary through to a full response from the Warfighting Division with thousands of soldiers and vehicles under command.  Operations could be conducted independently, with NATO, or with key allies like the US and France.</p> 
+                            <p>The Camerooonian Army has many uses, though it is primarily a war-fighting organisation to protect the nation and, if required, fight the nation’s enemies with absolute commitment.  Within hours soldiers from the Air Assault Task Force can react to a potential adversary through to a full response from the Warfighting Division with thousands of soldiers and vehicles under command.  Operations could be conducted independently, with BIR, or with key allies like the US and France.</p> 
                         </div>
                     </div>
                 </div>
@@ -100,11 +100,11 @@
                             </div>
                             <div class="col-md-4 mw-100">
                                 <h3 class="font-weight-light h4 mb-4">Email</h3> 
-                                <a href="mailto:group9@webprogramming.come"><p>group9@webprogramming.come</p> </a>
+                                <a href="mailto:group9@webprogramming.come"><p>group6@webprogramming.come</p> </a>
                             </div>
                             <div class="col-md-4">
                                 <h3 class="font-weight-light h4 mb-4">Address</h3> 
-                                <p>VR, Metropolis, MW</p> 
+                                <p>VR, Air force one, Yaounde</p> 
                             </div>
                         </div>
                     </div>
@@ -124,11 +124,11 @@
                             </div>
                             <div class="col-md-4 mw-100">
                                 <h3 class="font-weight-light h4 mb-4">Email</h3> 
-                                <a href="mailto:group6@webprogramming.com"><p>group9@webprogramming.come</p> </a>
+                                <a href="mailto:group6@webprogramming.com"><p>group6@webprogramming.come</p> </a>
                             </div>
                             <div class="col-md-4">
                                 <h3 class="font-weight-light h4 mb-4">Address</h3> 
-                                <p>VR, Metropolis, MW</p> 
+                                <p>VR, Air force one, Yaounde</p> 
                             </div>
                         </div>
                     </div>
@@ -137,18 +137,19 @@
                     <div class="col-md-6 p-5">
                         <div class="container  text-left">
                             <h3>Send a Message</h3>
-                            <form role="form"> 
+                            <form role="form" method="post">
+                                {% csrf_token %}
                                 <div class="form-group"> 
                                     <label for="exampleInputEmail1">Email address</label>                                     
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
+                                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">
                                 </div>                                 
                                 <div class="form-group"> 
                                     <label for="exampleInputPassword1">Password</label>                                     
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name"> 
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <input type="textarea" class="form-control" id="message" placeholder="Write your message here">
+                                    <input type="textarea" class="form-control" id="message" name="message" placeholder="Write your message here">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send</button>                                 
                             </form>
@@ -228,7 +229,7 @@
                 </div>                 
                 <div class="pb-3 pt-3 text-center"> 
                     <hr class="border-light mt-0"> 
-                    <p class="mb-0">Copyright &copy; 2021 Metropolis</p> 
+                    <p class="mb-0">Copyright &copy; 2021 Air force one</p> 
                 </div>                 
             </div>             
         </footer>
