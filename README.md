@@ -9,6 +9,11 @@ Emmanuel
 Etc
 I connected the pages from the persons aboce and built the vacjend logic
 No api was used
+
+
 #function
 Three users can use this app
 Visitors who are limited to some pages
+Military personel who have access to all utility of
+The app but admin panel
+And super users who can Crud the website
