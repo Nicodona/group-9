@@ -17,3 +17,8 @@ Visitors who are limited to some pages
 Military personel who have access to all utility of
 The app but admin panel
 And super users who can Crud the website
+
+
+
+This application was create for a school project 
+Level 300 year 2
