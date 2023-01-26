@@ -22,3 +22,7 @@ And super users who can Crud the website
 
 This application was create for a school project 
 Level 300 year 2
+
+
+Course title. Web programming II. 
+Semester fall
